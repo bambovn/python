@@ -1,8 +1,5 @@
 # 04. Connected Areas in Matrix
 
-from cProfile import label
-
-
 class Area:
     def __init__(self, row, col, size):
         self.row = row
@@ -53,5 +50,5 @@ for row in range(rows):
 
 print(f'Total areas found: {len(areas)}')
 
-for index, area in enumerate(sorted(areas, key=lambda a: a.size, reverse = True)):
+for index, area in enumerate(sorted(areas, key=lambda a: a.size, reverse=True)):
     print(f'Area #{index + 1} at ({area.row}, {area.col}), size: {area.size}')
